@@ -1,0 +1,1 @@
+import{j as t,m as e,a as r}from"./index-DTh1KLbV.js";const l=({className:s,children:o,glow:a=!0,...n})=>t.jsx(e.div,{whileHover:{scale:1.03,y:-4},transition:{type:"spring",stiffness:260,damping:20},className:r("glass-card",a&&"hover:outline hover:outline-1 hover:outline-neonCyan/60","transition-shadow duration-300",s),...n,children:o});export{l as G};
