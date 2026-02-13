@@ -49,7 +49,7 @@ export const EventCard: React.FC<EventCardProps> = ({
         </span>
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 text-xs text-slate-300 mb-4 relative z-10">
+      <div className="flex flex-wrap items-center gap-4 text-xs text-slate-700 dark:text-slate-300 mb-4 relative z-10">
         <div className="flex items-center gap-2">
           <CalendarDays className="h-4 w-4 text-neonCyan" />
           <span>{date}</span>
@@ -65,7 +65,7 @@ export const EventCard: React.FC<EventCardProps> = ({
       </div>
 
       <div className="space-y-2 relative z-10">
-        <div className="flex justify-between text-xs text-slate-300">
+        <div className="flex justify-between text-xs text-slate-700 dark:text-slate-300">
           <span>Capacity</span>
           <span>{capacityLabel}</span>
         </div>

@@ -10,11 +10,11 @@
   }
 
   body {
-    @apply bg-slate-950 text-slate-100 transition-colors duration-500;
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500;
   }
 
   .page-gradient {
-    @apply bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 dark:from-slate-950 dark:via-slate-950 dark:to-black transition-colors duration-500;
+    @apply bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 dark:from-slate-950 dark:via-slate-900 dark:to-black transition-colors duration-500;
   }
 }
 

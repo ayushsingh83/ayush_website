@@ -33,7 +33,7 @@ export const StatCard: React.FC<StatCardProps> = ({ label, value, prefix, suffix
   return (
     <GlassCard className="p-5 flex flex-col gap-3">
       <div className="flex items-center justify-between gap-3">
-        <p className="text-sm text-slate-300">{label}</p>
+        <p className="text-sm text-slate-700 dark:text-slate-300">{label}</p>
         {icon && (
           <div
             className={clsx(

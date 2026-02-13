@@ -7,10 +7,10 @@ export const Navbar: React.FC = () => {
   return (
     <header className="flex items-center justify-between gap-4 mb-6">
       <div className="hidden md:block">
-        <h1 className="text-xl md:text-2xl font-semibold tracking-tight mb-1">
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tight mb-1 text-slate-900 dark:text-slate-50">
           Welcome back, Coordinator
         </h1>
-        <p className="text-sm text-slate-300">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
           Track societies, events, and AI insights in one glassy workspace.
         </p>
       </div>
@@ -18,13 +18,13 @@ export const Navbar: React.FC = () => {
       <div className="flex-1 flex md:justify-end items-center gap-3">
         <div className="flex-1 md:flex-none">
           <div className="hidden sm:flex items-center gap-2 glass-card px-3 py-2">
-            <Search className="h-4 w-4 text-slate-400" />
+            <Search className="h-4 w-4 text-slate-500 dark:text-slate-400" />
             <input
               type="text"
               placeholder="Search societies, events, members..."
               className="bg-transparent border-none outline-none text-sm placeholder:text-slate-500 flex-1"
             />
-            <span className="hidden md:inline-flex text-[11px] text-slate-400 px-2 py-0.5 rounded-3xl border border-slate-700/60">
+            <span className="hidden md:inline-flex text-[11px] text-slate-600 dark:text-slate-400 px-2 py-0.5 rounded-3xl border border-slate-300/60 dark:border-slate-700/60">
               Ctrl + K
             </span>
           </div>

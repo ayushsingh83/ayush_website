@@ -53,8 +53,10 @@ const Societies: React.FC = () => {
     <div className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-lg md:text-xl font-semibold">Societies</h2>
-          <p className="text-sm text-slate-300">
+          <h2 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-slate-50">
+            Societies
+          </h2>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             Orchestrate every society from a single glass cockpit.
           </p>
         </div>
@@ -66,7 +68,7 @@ const Societies: React.FC = () => {
 
       <GlassCard className="p-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <p className="text-xs text-slate-300 max-w-xl">
+          <p className="text-xs text-slate-600 dark:text-slate-300 max-w-xl">
             Drag-select a cluster, filter by category, or let the AI assistant propose merges
             where membership overlaps heavily.
           </p>

@@ -117,7 +117,7 @@ const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="text-base md:text-lg font-semibold">Engagement Overview</h2>
-              <p className="text-xs text-slate-300">
+              <p className="text-xs text-slate-600 dark:text-slate-300">
                 Events & attendance trend over the current semester.
               </p>
             </div>
@@ -161,8 +161,12 @@ const Dashboard: React.FC = () => {
         <GlassCard className="p-5 flex flex-col gap-4">
           <div className="flex items-center justify-between gap-3">
             <div>
-              <h2 className="text-base md:text-lg font-semibold">Society Mix</h2>
-              <p className="text-xs text-slate-300">Distribution across categories.</p>
+              <h2 className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50">
+                Society Mix
+              </h2>
+              <p className="text-xs text-slate-600 dark:text-slate-300">
+                Distribution across categories.
+              </p>
             </div>
           </div>
           <div className="flex-1 flex items-center justify-center">
@@ -197,7 +201,7 @@ const Dashboard: React.FC = () => {
                   />
                   <span>{item.name}</span>
                 </div>
-                <span className="text-slate-300">{item.value}</span>
+                <span className="text-slate-700 dark:text-slate-300">{item.value}</span>
               </div>
             ))}
           </div>
@@ -207,7 +211,9 @@ const Dashboard: React.FC = () => {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <GlassCard className="p-5">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-base md:text-lg font-semibold">Recent Activity</h2>
+            <h2 className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50">
+              Recent Activity
+            </h2>
           </div>
           <div className="space-y-3">
             {recentActivity.map(item => (
@@ -216,10 +222,10 @@ const Dashboard: React.FC = () => {
                 className="flex items-start justify-between gap-3 rounded-3xl bg-slate-900/70 px-3 py-2"
               >
                 <div className="flex-1">
-                  <p className="text-sm">{item.title}</p>
-                  <p className="text-[11px] text-slate-400 mt-1">{item.time}</p>
+                  <p className="text-sm text-slate-800 dark:text-slate-100">{item.title}</p>
+                  <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-1">{item.time}</p>
                 </div>
-                <span className="px-2.5 py-1 rounded-3xl text-[11px] bg-slate-800/80 text-slate-200 border border-slate-600/60">
+                <span className="px-2.5 py-1 rounded-3xl text-[11px] bg-slate-200/80 text-slate-800 dark:bg-slate-800/80 dark:text-slate-200 border border-slate-300/60 dark:border-slate-600/60">
                   {item.tag}
                 </span>
               </div>
@@ -229,7 +235,9 @@ const Dashboard: React.FC = () => {
 
         <GlassCard className="p-5">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-base md:text-lg font-semibold">Upcoming Events</h2>
+            <h2 className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50">
+              Upcoming Events
+            </h2>
           </div>
           <div className="space-y-3">
             {upcomingEvents.map(event => (
@@ -238,13 +246,15 @@ const Dashboard: React.FC = () => {
                 className="flex items-center justify-between gap-3 rounded-3xl bg-slate-900/70 px-3 py-2"
               >
                 <div>
-                  <p className="text-sm font-medium">{event.title}</p>
-                  <p className="text-[11px] text-slate-400">
+                  <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
+                    {event.title}
+                  </p>
+                  <p className="text-[11px] text-slate-600 dark:text-slate-400">
                     {event.society} • {event.time}
                   </p>
                 </div>
-                <div className="flex flex-col items-end text-xs text-slate-300">
-                  <span className="px-2.5 py-1 rounded-3xl bg-slate-800/80 border border-slate-600/70">
+                <div className="flex flex-col items-end text-xs text-slate-700 dark:text-slate-300">
+                  <span className="px-2.5 py-1 rounded-3xl bg-slate-200/80 text-slate-800 dark:bg-slate-800/80 dark:text-slate-200 border border-slate-300/70 dark:border-slate-600/70">
                     {event.date}
                   </span>
                 </div>

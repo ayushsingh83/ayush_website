@@ -51,8 +51,10 @@ const Events: React.FC = () => {
     <div className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-lg md:text-xl font-semibold">Events</h2>
-          <p className="text-sm text-slate-300">
+          <h2 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-slate-50">
+            Events
+          </h2>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             Capacity-aware scheduling with live visibility into what’s filling up.
           </p>
         </div>
@@ -63,7 +65,7 @@ const Events: React.FC = () => {
       </div>
 
       <GlassCard className="p-4">
-        <p className="text-xs text-slate-300">
+        <p className="text-xs text-slate-600 dark:text-slate-300">
           AI can auto-suggest slots to avoid clashes with exams, labs, and other flagship events.
         </p>
       </GlassCard>

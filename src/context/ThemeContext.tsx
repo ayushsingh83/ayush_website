@@ -15,9 +15,8 @@ const getInitialTheme = (): Theme => {
   if (typeof window === 'undefined') return 'dark';
   const stored = window.localStorage.getItem(THEME_KEY) as Theme | null;
   if (stored === 'light' || stored === 'dark') return stored;
-
-  const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-  return prefersDark ? 'dark' : 'light';
+  // Default to dark when no preference stored
+  return 'dark';
 };
 
 const applyThemeToHtml = (theme: Theme) => {
